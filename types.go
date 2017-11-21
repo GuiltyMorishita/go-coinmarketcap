@@ -10,6 +10,9 @@ type Coin struct {
 	PriceBtc         float64 `json:"price_btc,string"`
 	Usd24hVolume     float64 `json:"24h_volume_usd,string"`
 	MarketCapUsd     float64 `json:"market_cap_usd,string"`
+	PriceJpy         float64 `json:"price_jpy,string"`
+	Jpy24hVolume     float64 `json:"24h_volume_jpy,string"`
+	MarketCapJpy     float64 `json:"market_cap_jpy,string"`
 	AvailableSupply  float64 `json:"available_supply,string"`
 	TotalSupply      float64 `json:"total_supply,string"`
 	PercentChange1h  float64 `json:"percent_change_1h,string"`

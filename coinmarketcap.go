@@ -30,8 +30,8 @@ func GetMarketData() (GlobalMarketData, error) {
 }
 
 // Get information about a crypto currency.
-func GetCoinData(coin string) (Coin, error) {
-	url = fmt.Sprintf("%s/ticker/%s", baseUrl, coin)
+func GetCoinData(coin, unit string) (Coin, error) {
+	url = fmt.Sprintf("%s/ticker/%s/?convert=%s", baseUrl, coin, unit)
 	resp, err := makeReq(url)
 	if err != nil {
 		return Coin{}, err
